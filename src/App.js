@@ -6,10 +6,11 @@ import  Error from './pages/Error';
 
 import './App.css';
 import { Route ,Switch} from 'react-router-dom';
-import Navnar from './components/Navbar';
+import Navbar from './components/Navbar';
 function App() {
   return (
 <React.Fragment>
+  <Navbar />
   <Switch>
   <Route exact path="/" component={Home} />
   <Route exact path="/rooms/" component={Rooms} />
